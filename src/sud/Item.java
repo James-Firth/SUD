@@ -22,5 +22,6 @@ class Item
    public Item(String itemName, boolean canConsume, boolean canEquip, int attack, int def, int spd, int hp)
    {
        name = itemName;
+       ///ADDING STUFF I JUST WANT TO SEE HOW THIS WORKS
    }       
 }
