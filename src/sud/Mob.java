@@ -21,5 +21,5 @@ class Mob extends Creature
 		speed = s;
 		level = 1;
 	}//end constructor
-	
+        	
 }
