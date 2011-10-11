@@ -13,5 +13,6 @@ public class SUD {
     public static void main(String[] args) {
         // TODO code application logic here
         Mob monster = new Mob(1,2,3,4);
+        //ADDING EXTRA STUFF FOR EXAMPLE PURPOSES!
     }
 }
