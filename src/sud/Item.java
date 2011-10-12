@@ -27,7 +27,6 @@ abstract class Item
        this.isConsumable = isConsumable;
        this.isEquipable = isEquipable;
        this.isStackable = isStackable;
-       ///ADDING STUFF I JUST WANT TO SEE HOW THIS WORKS
    }       
    
    public String toString()
