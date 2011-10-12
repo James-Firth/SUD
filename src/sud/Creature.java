@@ -1,6 +1,8 @@
 package sud;
 abstract class Creature
-{	
+{
+	//Global Variables Here!!
+	
 	protected String name;
 	protected int maxHealth;
 	protected int currentHealth;
