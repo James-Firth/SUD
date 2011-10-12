@@ -58,6 +58,37 @@ abstract class Equipable extends Item
         this.spdBonus = spdBonus;
         this.hpBonus = hpBonus;
     }
+    
+    //Getters
+    public int getSlot()
+    {
+        return slot;
+    }
+    
+    public int getAttBonus()
+    {
+        return attBonus;
+    }
+    
+    public int getDefBonus()
+    {
+        return defBonus;
+    }
+    
+    public int getSpdBonus()
+    {
+        return spdBonus;
+    }
+    
+    public int getHpBonus()
+    {
+        return hpBonus;
+    }
+
+    
+    
+    
+    
 }
 
 abstract class Consumable extends Item
