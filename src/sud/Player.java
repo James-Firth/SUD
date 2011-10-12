@@ -23,15 +23,22 @@ class Player extends Creature
         public void Equip(Equipable gear)
         {
             //Waiting for input
-            if(equips[gear.getSlot()] == 0 || equips[gear.getSlot()] == null)
+            if(equips[gear.getSlot()] == null)
             {
                 equips[gear.getSlot()] = gear;
             }
             else
             {
-                //replace?
+                //ask user if they want to replace current gear.
+                //if yes, equipment trades places with inventory item
+                //if no, do nothing.
                 
             }
+        }
+        
+        public Item[] getInventory()
+        {
+            return inventory;
         }
 	
 }
