@@ -80,3 +80,4 @@ abstract class Creature
         {
                currentHealth = currentHealth - given; 
         }
+}
