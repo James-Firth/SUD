@@ -58,6 +58,37 @@ abstract class Equipable extends Item
         this.spdBonus = spdBonus;
         this.hpBonus = hpBonus;
     }
+    
+    //Getters
+    public int getSlot()
+    {
+        return slot;
+    }
+    
+    public int getAttBonus()
+    {
+        return attBonus;
+    }
+    
+    public int getDefBonus()
+    {
+        return defBonus;
+    }
+    
+    public int getSpdBonus()
+    {
+        return spdBonus;
+    }
+    
+    public int getHpBonus()
+    {
+        return hpBonus;
+    }
+
+    
+    
+    
+    
 }
 
 abstract class Consumable extends Item
@@ -83,14 +114,39 @@ abstract class Consumable extends Item
         this.levelMod = levelMod;
     }
     
-    public void use(Creature to)
+    public int getMaxHealthMod(Creature to)
     {
-        to.changeAttack(attackMod);
-        to.changeCurrentHealth(currentHealthMod);
-        to.changeDefense(defenseMod);
-        to.changeExperience(experienceMod);
-        to.changeLevel(levelMod);
-        to.changeMaxHealth(maxHealthMod);
-        to.changeSpeed(speedMod);
+        return maxHealthMod;
+    }
+    
+    public int getCurrentHealthMod(Creature to)
+    {
+        return currentHealthMod;
+    }
+    
+    public int getAttackMod(Creature to)
+    {
+        return attackMod;
+    }
+    
+    public int getDefenseMod(Creature to)
+    {
+        return defenseMod;
+    }
+    
+    public int getSpeedMod(Creature to)
+    {
+        return speedMod;
+    }
+    
+    public int getExperienceMod(Creature to)
+    {
+        return experienceMod;
+    }
+
+    
+    public int getLevelMod(Creature to)
+    {
+        return levelMod;
     }
 }
