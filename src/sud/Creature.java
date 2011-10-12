@@ -39,4 +39,34 @@ abstract class Creature
 	{
 		return "Health: "+ currentHealth + "\nAttack: "+  attack + "\nDefense: " + defense + "\nSpeed: " + speed +"\n";
 	}
+    
+    
+    public void changeMaxHealth(int in)
+    {
+        maxHealth+=in;
+    }
+	public void changeCurrentHealth(int in)
+    {
+        currentHealth+=in;
+    }
+	public void changeAttack(int in)
+    {
+        attack+=in;
+    }
+	public void changeDefense(int in)
+    {
+        defense+=in;
+    }
+	public void changeSpeed(int in)
+    {
+        speed+=in;
+    }
+	public void changeExperience(int in)
+    {
+        experience+=in;
+    }
+	public void changeLevel(int in)
+    {
+        level+=in;
+    }
 }
