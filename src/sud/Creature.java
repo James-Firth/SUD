@@ -3,6 +3,7 @@ abstract class Creature
 {
 	//Global Variables Here!!
 	
+	//Pull test
 	protected String name;
 	protected int maxHealth;
 	protected int currentHealth;
