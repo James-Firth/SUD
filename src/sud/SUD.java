@@ -38,6 +38,15 @@ public class SUD
 				response = getValidString("Check What?");
 				print("CHECK");
 			}
+			else if (response.equalsIgnoreCase("save"))
+			{
+				//SAVE STUFFS
+				print("SAVE STUFFS");
+			}
+			else
+			{
+				System.out.println("Invalid Response, please try again");
+			}
 
 		}
 	}
