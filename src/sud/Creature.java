@@ -1,30 +1,76 @@
 package sud;
 abstract class Creature
 {
+        protected String name;
 	protected int maxHealth;
 	protected int currentHealth;
 	protected int attack;
 	protected int defense;
 	protected int speed;
-	protected double experience;
+	protected int experience;
 	protected int level;
 
+        protected Creature(String name, int mHP, int cHP, int att, int def, int spd, int exp, int lvl)
+        {
+            this.name = name;
+            maxHealth = mHP;
+            currentHealth = cHP;
+            attack = att;
+            defense = def;
+            speed = spd;
+            experience = exp;
+            level = lvl;
+        }
         
         
-        //Getters
+        //******************** GETTERS *****************
+        public String getName()
+        {
+            return name;
+        }
+        
+        public int getHealth()
+        {
+            return currentHealth;
+        }
+        
 	public int getMaxHealth()
 	{
 		return maxHealth;
 	}
         
-        public int getCurrentHealth()
+        public int getAttack()
         {
-                return currentHealth;
+            return attack;
         }
         
+        public int getDefense()
+        {
+            return defense;
+        }
         
-	//Private as damage calculation should be performed inside Creature?
-                //              ^^^^ see Issues about this comment.
+        public int getSpeed()
+        {
+            return speed;
+        }
+        
+        public int getExp()
+        {
+            return experience;
+        }
+        
+        public int getLevel()
+        {
+            return level;
+        }
+        
+	public String toString()
+	{
+		return "Health: "+ currentHealth + "\nAttack: "+  attack + "\nDefense: " + defense + "\nSpeed: " + speed +"\n";
+	}
+        
+        
+        //**************  SETTERS ******************
 	private void takeDamage(int taken)
 	{
 		currentHealth = currentHealth - taken;
@@ -35,12 +81,9 @@ abstract class Creature
                currentHealth = currentHealth - given; 
         }
 
-	public String toString()
-	{
-		return "Health: "+ currentHealth + "\nAttack: "+  attack + "\nDefense: " + defense + "\nSpeed: " + speed +"\n";
-	}
+
     
-    
+
     public void changeMaxHealth(int in)
     {
         maxHealth+=in;
