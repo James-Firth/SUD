@@ -15,6 +15,11 @@ public class SUD
 		print("----------------------------\nEND OF PROGRAM\n----------------------------");
 		//Mob monster = new Mob(1,2,3,4);
 	}
+
+	public static void roomGeneration()
+	{
+		Room[][] rooms = new Room[][];
+	}
 	public static void menu()
 	{
 		String output = "What would you like to do?";

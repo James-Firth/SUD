@@ -4,6 +4,8 @@
 class Player extends Creature
 {
 	private Item [] inventory;
+	int x-coor,y-coor;
+
 	final private Equipable[] equips = new Equipable[6]; //Head, Body, Legs, Arms, Arms, Accessory Accessory
 		
 		//Creating a new character
