@@ -1,5 +1,7 @@
 //package sud;
 
+
+//The Package System isn't working period... we'll need to look into how to fix it... ~~KT
 import java.util.Scanner;
 
 public class SUD 
