@@ -8,17 +8,22 @@ import java.util.Scanner;
 
 public class SUD 
 {
-
 	public static void main(String[] args) 
 	{
+		String bSq = "■";
+		String wSq = "□"; 
+		String currentLoc = "◉";
+		String outOfBounds = "◆";
+		print (bSq +  "\n" +wSq);
 		menu();
 		print("----------------------------\nEND OF PROGRAM\n----------------------------");
+		print (bSq +  "\n" + wSq);
 		//Mob monster = new Mob(1,2,3,4);
 	}
 
 	public static void roomGeneration()
 	{
-		Room[][] rooms = new Room[][];
+		Room[][] rooms;
 	}
 	public static void menu()
 	{
