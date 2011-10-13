@@ -1,7 +1,6 @@
-package sud;
-/*
- * Creatures
- */
+//package sud;
+
+
 class Mob extends Creature
 {
         	

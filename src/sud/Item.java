@@ -1,4 +1,4 @@
-package sud;
+//package sud;
 
 abstract class Item 
 {

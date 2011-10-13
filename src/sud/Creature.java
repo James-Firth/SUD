@@ -1,4 +1,4 @@
-packagadde sud;
+//package sud;
 abstract class Creature
 {
 	//Global Variables Here!!
