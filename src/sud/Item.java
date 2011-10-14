@@ -6,7 +6,7 @@ abstract class Item
 	private boolean isEquipable;
 	private boolean isStackable;
 	private String name;
-	private 	String type;
+	private String type;
 
 	//Constructor
 	protected Item(String name, String type, boolean isConsumable, boolean isEquipable,boolean isStackable)
