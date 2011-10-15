@@ -75,13 +75,8 @@ abstract class Creature
 		
 		
 	//**************  SETTERS ******************
-	protected void takeDamage(int taken)
+	protected void changeDamage(int change)
 	{
-		currentHealth = currentHealth - taken;
-	}
-		
-	protected void giveHealth(int given)
-	{
-		   currentHealth = currentHealth - given; 
+		currentHealth = currentHealth + change;
 	}
 }
