@@ -4,6 +4,8 @@
 //The Package System isn't working period... we'll need to look into how to fix it... ~~KT
 
 //The problem is that we will need to add something to the CLASSPATH, because when you run something with a package, it goes "java sud.SUD" and java doesn't know where to find  the package SUD, mabe this won't be a problem when we case it in a jar file, but for now unless we only play on running it through our IDE's, we'll need to find a solution.
+
+//Everyone should update to Java 7, we should use String Switch blocks!
 import java.util.Scanner;
 
 public class SUD 
