@@ -1,5 +1,7 @@
 //package sud;
 
+//test
+
 abstract class Item 
 {
 	private boolean isConsumable;

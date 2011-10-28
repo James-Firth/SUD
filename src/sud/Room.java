@@ -1,6 +1,5 @@
 import java.awt.Point;
 
-
 // The idea in here I like,    but it doesn't work... (see Map for more information)
 
 class Room 
