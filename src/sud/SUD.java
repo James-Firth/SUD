@@ -31,60 +31,61 @@ public class SUD
 	{
 		String output = "What would you like to do?";
 		String response = "";
+		int value = -1;
 		boolean keepGoing = true;
+		String [] mainOptions = {"help", "map", "draw", "check", "save", "exit", "options"};
+		
 
 		while (keepGoing)
 		{
 			response = getValidString(output);
-			if(response.equalsIgnoreCase("help"))
-			{
-				String help = "This is the help section";
-				print(helpMethod());
-			}
-			else if (response.equalsIgnoreCase("map" ) || response.equalsIgnoreCase("draw"))
-			{
-				//draw map method or class here
-				print("DRAW MAP HERE");
-			}
-			else if (response.equalsIgnoreCase("check"))
-			{
-				//check what?
-				response = getValidString("Check What?");
-				print("CHECK");
-			}
-			else if (response.equalsIgnoreCase("save"))
-			{
-				//SAVE STUFFS
-				print("SAVE STUFFS");
-			}
-			else if (response.equalsIgnoreCase("exit"))
-			{
-				response = getValidString("Would you like to save? \nPlease enter \"yes\", \"y\",\"no\" or \"n\" if you still wish to exit, or type in anything else to return to the game.");
-				if (response.equalsIgnoreCase("yes")||response.equalsIgnoreCase("y"))
-				{
-					//SAVE STUFFS
-					print("Exit save stuffs");
-					keepGoing  = false;
-				}
-				else if(response.equalsIgnoreCase("no")||response.equalsIgnoreCase("n"))
-				{
-					print("Your possible loss... Oh well");
-					keepGoing = false;
-				}
-				else
-				{
-					print("Your will now be returned to the game, have fun Adventurer.");
-				}
-			}
-			else
-			{
-				print("Invalid Response, please try again");
-			}
+			value = Menu.getOption(response, mainOptions);
 
+			switch (value)
+			{
+				case 0: print(helpMethod());break;
+				case 1: print("DRAW MAP STUFFS HERE"); break;
+				case 2: print("DRAW MAP STUFFS HERE"); break;
+				case 3: print("Check What?"); break;
+				case 4: print("save Stuffs"); break;
+				case 5:
+				{
+					response = getValidString("Would you like to save? \nPlease enter \"yes\", \"y\",\"no\" or \"n\" if you still wish to exit, or type in anything else to return to the game.");
+					if (response.equalsIgnoreCase("yes")||response.equalsIgnoreCase("y"))
+					{
+						//SAVE STUFFS
+						print("Exit save stuffs");
+						keepGoing  = false;
+					}
+					else if(response.equalsIgnoreCase("no")||response.equalsIgnoreCase("n"))
+					{
+						print("Your possible loss... Oh well");
+						keepGoing = false;
+					}
+					else
+					{
+						print("Your will now be returned to the game, have fun Adventurer.");
+					}
+
+					break;
+				}//end case
+				case 6 : 
+				{
+					for (int i = 0 ; i < mainOptions.length ; i ++)
+					{
+						if (i != mainOptions.length -1)
+							System.out.print(mainOptions[i] + ", ");
+						else
+							System.out.println(mainOptions[i]);
+					}
+					break;
+				}//end case
+				case -1: print("Invalid Response, try again"); break;
+			}//end switch
 		}//end while
 
 		print("Thank you for playing.");
-	}
+	}//end menu
 	public static String getValidString(String output)
 	{
 		//get input and trim the output
