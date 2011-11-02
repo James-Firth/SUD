@@ -34,8 +34,6 @@ public class SUD
 		int value = -1;
 		boolean keepGoing = true;
 		String [] mainOptions = {"help", "map", "draw", "check", "save", "exit", "options"};
-		
-
 		while (keepGoing)
 		{
 			response = getValidString(output);
@@ -66,7 +64,6 @@ public class SUD
 					{
 						print("Your will now be returned to the game, have fun Adventurer.");
 					}
-
 					break;
 				}//end case
 				case 6 : 
@@ -83,7 +80,6 @@ public class SUD
 				case -1: print("Invalid Response, try again"); break;
 			}//end switch
 		}//end while
-
 		print("Thank you for playing.");
 	}//end menu
 	public static String getValidString(String output)

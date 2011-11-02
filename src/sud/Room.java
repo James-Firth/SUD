@@ -6,13 +6,15 @@ class Room
 {
 	protected boolean inRoom;
 	protected boolean hasVisit;
+	protected boolean hasTreasure;
 	protected Point location;
 
-	public Room(boolean inRoom, boolean hasVisit, Point location)
+	public Room(boolean inRoom, boolean hasVisit, Point location, boolean hasT)
 	{
 		this.inRoom = inRoom;
 		this.hasVisit = hasVisit;
 		this.location = location;
+		this.hasTreasure = hasT;
 
 	}//end constructor
 
