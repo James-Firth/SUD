@@ -1,11 +1,9 @@
 //package sud;
 
-
 //The Package System isn't working period... we'll need to look into how to fix it... ~~KT
 
 //The problem is that we will need to add something to the CLASSPATH, because when you run something with a package, it goes "java sud.SUD" and java doesn't know where to find  the package SUD, mabe this won't be a problem when we case it in a jar file, but for now unless we only play on running it through our IDE's, we'll need to find a solution.
 
-//Everyone should update to Java 7, we should use String Switch blocks!
 import java.util.Scanner;
 
 public class SUD 
@@ -16,11 +14,10 @@ public class SUD
 		String wSq = "□"; 
 		String currentLoc = "◉";
 		String outOfBounds = "◆";
-		print (bSq +  "\n" +wSq);
+		//print (bSq +  "\n" +wSq);
 		menu();
 		print("----------------------------\nEND OF PROGRAM\n----------------------------");
-		print (bSq +  "\n" + wSq);
-		//Mob monster = new Mob(1,2,3,4);
+		//print (bSq +  "\n" + wSq);
 	}
 
 	public static void roomGeneration()
@@ -30,14 +27,12 @@ public class SUD
 	public static void menu()
 	{
 		String output = "What would you like to do?";
-		String response = "";
 		int value = -1;
 		boolean keepGoing = true;
 		String [] mainOptions = {"help", "map", "draw", "check", "save", "exit", "options"};
 		while (keepGoing)
 		{
-			response = getValidString(output);
-			value = Menu.getOption(response, mainOptions);
+			value = Menu.getOption(getValidString(output), mainOptions);
 
 			switch (value)
 			{
@@ -47,7 +42,6 @@ public class SUD
 				case 3: print("Check What?"); break;
 				case 4: print("save Stuffs"); break;
 				case 5:
-				{
 					response = getValidString("Would you like to save? \nPlease enter \"yes\", \"y\",\"no\" or \"n\" if you still wish to exit, or type in anything else to return to the game.");
 					if (response.equalsIgnoreCase("yes")||response.equalsIgnoreCase("y"))
 					{
@@ -61,11 +55,9 @@ public class SUD
 						keepGoing = false;
 					}
 					else
-					{
 						print("Your will now be returned to the game, have fun Adventurer.");
-					}
 					break;
-				}//end case
+				//end case
 				case 6 : 
 				{
 					for (int i = 0 ; i < mainOptions.length ; i ++)
